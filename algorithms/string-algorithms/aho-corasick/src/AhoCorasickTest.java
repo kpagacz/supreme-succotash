@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -5,6 +6,11 @@ import java.util.List;
 
 class AhoCorasickTest {
   AhoCorasick aho;
+
+  @BeforeEach
+  void setUp() {
+    aho = new AhoCorasick();
+  }
 
   @Test
   void testSearchingInString() {

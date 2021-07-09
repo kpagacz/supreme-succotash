@@ -83,7 +83,6 @@ public class AhoCorasick {
       node.longestSuffix = root;
     } else {
       node.longestSuffix = longestSuffix.children.get(node.character);
-      longestSuffix.children.get(node.character);
     }
   }
 
