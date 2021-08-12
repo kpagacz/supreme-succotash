@@ -1,7 +1,11 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/**
+ * This is an implementation of an algorithm for construction of a suffix array from a string s.
+ *
+ * Running time complexity: O(nlog^2n) where n is the length of the string s.
+ * */
 public class SuffixArray {
   static class SuffixComparator implements Comparator<Suffix> {
     public int compare(Suffix first, Suffix second) {
